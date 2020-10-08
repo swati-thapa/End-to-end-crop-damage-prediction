@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Crop Damage</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<form action="{{url_for('predict')}}" method ="post">
+  <div class="wrapper">
+    <div class="title">
+      Crop Damage Prediction
+    </div>
+    <div class="form">
+       <div class="inputfield">
+          <label>Estimated Insects Count </label>
+          <input type="number" onkeypress="return event.charCode >= 48" min="1" class="input" name="Estimated Insects Count">
+       </div>
+        <div class="inputfield">
+          <label>Crop Type</label>
+          <div class="custom_select">
+            <select name="Crop Type">
+              <option value="">----</option>
+              <option value="0">Type 0</option>
+              <option value="1">Type 1</option>
+            </select>
+          </div>
+       </div>
+       <div class="inputfield">
+          <label>Soil Type</label>
+          <div class="custom_select">
+            <select name="Soil Type">
+              <option value="">----</option>
+              <option value="0">Type 0</option>
+              <option value="1">Type 1</option>
+            </select>
+          </div>
+       </div>
+      <div class="inputfield">
+          <label>Pesticides Usage</label>
+          <div class="custom_select">
+            <select name="Pesticides Usage">
+              <option value="">----</option>
+              <option value="0">Never Used</option>
+              <option value="1">Previously Used</option>
+              <option value="2">Currently Used</option>
+            </select>
+          </div>
+       </div>
+        <div class="inputfield">
+          <label>Number of Doses per week</label>
+          <input type="number" onkeypress="return event.charCode >= 48" min="1" class="input" name="Number of Doses per week">
+       </div>
+      <div class="inputfield">
+          <label>Number of weeks used</label>
+          <input type="number" onkeypress="return event.charCode >= 48" min="1" class="input" name="Number of weeks used">
+       </div>
+      <div class="inputfield">
+          <label>Number of Weeks quit</label>
+          <input type="number" onkeypress="return event.charCode >= 48" min="1" class="input" name="Number of Weeks quit">
+       </div>
+      <div class="inputfield">
+          <label>Season</label>
+          <div class="custom_select">
+            <select name="Season">
+              <option value="">----</option>
+              <option value="0">Season Type 1</option>
+              <option value="1">Season Type 2</option>
+              <option value="2">Season Type 3</option>
+            </select>
+          </div>
+       </div>
+      <div class="inputfield">
+        <input type="submit" value="Predict" class="btn">
+      </div>
+     <br>
+        <div>
+            {{  prediction_crop_damage }}
+        </div>
+    </div>
+    </div>
+  </div>
+</form>
+
+</div>
+</body>
+</html>
