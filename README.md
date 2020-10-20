@@ -17,7 +17,7 @@ Cloud and tools used:
 
 Steps followed:
 
-  1. AWS RDA(PostgreSQL) was created to store the data with more than 80k+ rows.
+  1. AWS RDS(PostgreSQL) was created to store the data with more than 80k+ rows.
   
   2. These data were extracted from RDS and was used for analysis and Modeling.
   
