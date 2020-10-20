@@ -1,11 +1,12 @@
 # Crop-Damage-prediction-end-to-end
 
 Link to the site: http://3.138.37.88:5000/
+Link to notebook: https://colab.research.google.com/drive/1WSgkFl52WqHQIlVFEgpsKsADUjhRYEVG?usp=sharing
 
 Aim: Trying to replicate complete end to end Machine Learning deployment.
 
 Problem statement: You need to determine the outcome of the harvest season, i.e. whether the crop would be healthy (alive), damaged by pesticides or damaged by other reasons.
-                   https://datahack.analyticsvidhya.com/contest/janatahack-machine-learning-in-agriculture/#MySubmissions
+                   https://datahack.analyticsvidhya.com/contest/janatahack-machine-learning-in-agriculture/#ProblemStatement
 
 Cloud and tools used:
 1. AWS RDS(PostgreSQL)
