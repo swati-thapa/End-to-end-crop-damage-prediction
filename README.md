@@ -1,6 +1,6 @@
 # Crop-Damage-prediction-end-to-end
 
-Link to the site: http://3.139.100.231:5000/
+Link to the site: http://3.21.163.116:5000/
 
 Link to notebook: https://colab.research.google.com/drive/1WSgkFl52WqHQIlVFEgpsKsADUjhRYEVG?usp=sharing
 
